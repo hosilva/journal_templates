@@ -1,0 +1,63 @@
+\documentclass[aps, 10pt, prd,
+               notitlepage, twocolumn, superscriptaddress,
+               nofootinbib]{revtex4-2}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathrsfs}
+\usepackage{anyfontsize}
+
+\usepackage[linktocpage,breaklinks]{hyperref}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+% Comment this out if want to use times font
+% \usepackage{txfonts}
+\usepackage{tensor}
+\usepackage{bm}
+
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+
+\usepackage{natbib}
+\usepackage{hyperref}
+
+\hypersetup{colorlinks=true,
+            citecolor=blue,
+            linkcolor=blue,
+            urlcolor=blue}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Add coloborators here
+\newcommand{\hs}[1]{{\color{blue}[HS: #1]}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\title{Template for Phys. Rev.}
+
+\begin{abstract}
+Terse.
+\end{abstract}
+
+\author{Hector O. Silva}
+\email{hector.okadadasilva@montana.edu}
+\affiliation{eXtreme Gravity Institute,
+Department of Physics, Montana State University, Bozeman, MT 59717 USA}
+
+\date{{\today}}
+
+\maketitle
+
+\section{Introduction}
+
+\section*{Acknowledgments}
+%
+H.O.S was supported by NASA grants NNX16AB98G and 80NSSC17M0041.
+
+\bibliographystyle{apsrev4-1}
+\bibliography{biblio}
+
+\end{document}
