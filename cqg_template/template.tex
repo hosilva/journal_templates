@@ -1,0 +1,47 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{iopart}
+
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,
+            linkcolor=Magenta,
+            citecolor=Magenta,
+            filecolor=Magenta,
+            urlcolor=Magenta}
+
+\newcommand{\eqref}[1]{(\ref{#1})}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\title[Mini-title]{\sc Main title}
+
+\author{\sc
+Hector~O.~Silva$^{1}$
+}
+
+\address{$^{1}$~eXtreme Gravity Institute, Department of Physics,
+Montana State University, Bozeman, MT 59717, USA.}
+
+\date{\today}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+\end{abstract}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Acknowledgments}
+
+The authors acknowledge financial support through
+NASA grants NNX16AB98G and 80NSSC17M0041.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{References}
+\bibliographystyle{iopart-num}
+\bibliography{biblio}
+
+\end{document}
