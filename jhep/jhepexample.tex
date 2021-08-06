@@ -15,23 +15,25 @@
 %% \affiliation{Institution,\\Address, Country}
 
 % more complex case: 4 authors, 3 institutions, 2 footnotes
-\author[a,b,1]{F. Irst,\note{Corresponding author.}}
-\author[c]{S. Econd,}
-\author[a,2]{T. Hird\note{Also at Some University.}}
-\author[a,2]{and Fourth}
+% \author[a,b,1]{F. Irst,\note{Corresponding author.}}
+% \author[c]{S. Econd,}
+% \author[a,2]{T. Hird\note{Also at Some University.}}
+% \author[a,2]{and Fourth}
+
+\author[a]{Hector O. Silva}
 
 % The "\note" macro will give a warning: "Ignoring empty anchor..."
 % you can safely ignore it.
 
-\affiliation[a]{One University,\\some-street, Country}
-\affiliation[b]{Another University,\\different-address, Country}
-\affiliation[c]{A School for Advanced Studies,\\some-location, Country}
+\affiliation[a]{Max Planck Institute for Gravitational Physics (Albert Einstein Institute), Am M\"uhlenberg 1, 14476 Potsdam, Germany}
+% \affiliation[b]{Another University,\\different-address, Country}
+% \affiliation[c]{A School for Advanced Studies,\\some-location, Country}
 
 % e-mail addresses: one for each author, in the same order as the authors
-\emailAdd{first@one.univ}
-\emailAdd{second@asas.edu}
-\emailAdd{third@one.univ}
-\emailAdd{fourth@one.univ}
+\emailAdd{hector.silva@aei.mpg.de}
+% \emailAdd{second@asas.edu}
+% \emailAdd{third@one.univ}
+% \emailAdd{fourth@one.univ}
 
 
 
@@ -48,7 +50,7 @@
 \label{sec:intro}
 
 For internal references use label-refs: see section~\ref{sec:intro}.
-Bibliographic citations can be done with cite: refs.~\cite{a,b,c}.
+Bibliographic citations can be done with cite: refs.~\cite{Levi:2014gsa}.
 When possible, align equations on the equal sign. The package
 \texttt{amsmath} is already loaded. See \eqref{eq:x}.
 \begin{equation}
@@ -169,25 +171,29 @@ after the paper has been written.
 % We however suggest to always provide author, title and journal data:
 % in short all the informations that clearly identify a document.
 
-\begin{thebibliography}{99}
+% \begin{thebibliography}{99}
+%
+% \bibitem{a}
+% Author, \emph{Title}, \emph{J. Abbrev.} {\bf vol} (year) pg.
+%
+% \bibitem{b}
+% Author, \emph{Title},
+% arxiv:1234.5678.
+%
+% \bibitem{c}
+% Author, \emph{Title},
+% Publisher (year).
+%
+% % Please avoid comments such as "For a review'', "For some examples",
+% % "and references therein" or move them in the text. In general,
+% % please leave only references in the bibliography and move all
+% % accessory text in footnotes.
+%
+% % Also, please have only one work for each \bibitem.
+% \end{thebibliography}
 
-\bibitem{a}
-Author, \emph{Title}, \emph{J. Abbrev.} {\bf vol} (year) pg.
+\bibliographystyle{jhep}
+\bibliography{biblio}
 
-\bibitem{b}
-Author, \emph{Title},
-arxiv:1234.5678.
 
-\bibitem{c}
-Author, \emph{Title},
-Publisher (year).
-
-% Please avoid comments such as "For a review'', "For some examples",
-% "and references therein" or move them in the text. In general,
-% please leave only references in the bibliography and move all
-% accessory text in footnotes.
-
-% Also, please have only one work for each \bibitem.
-
-\end{thebibliography}
 \end{document}
