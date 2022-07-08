@@ -276,9 +276,9 @@ FUNCTION {format.authors}
 
 FUNCTION {format.eprint.newarXivid}
 { eprint #1 #6 substring$ "arXiv:" =
-    {"\href{http://xxx.lanl.gov/abs/" eprint #7 #10 substring$ * "}" *
+    {"\href{http://arxiv.org/abs/" eprint #7 #10 substring$ * "}" *
         "{{\tt " * eprint #7 #10 substring$ * "}}" *}
-    {"\href{http://xxx.lanl.gov/abs/" eprint #1 #10 substring$  * "}" *
+    {"\href{http://arxiv.org/abs/" eprint #1 #10 substring$  * "}" *
         "{{\tt arXiv:" * eprint #1 #10 substring$ * "}}" *}
   if$
 }
